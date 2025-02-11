@@ -1,1 +1,1 @@
-A project created using html and css.
+A demo portfolio created using html and css.
