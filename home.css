@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #ff007f, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff007f;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90vh;
+    padding: 50px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 60%;
+    text-align: left;
+}
+
+.line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #ff007f;
+    margin-bottom: 20px;
+}
+
+.tagline {
+    font-size: 24px;
+    color: #bbb;
+    margin: 0;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 800;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.roles {
+    font-size: 24px;
+    color: #ff007f;
+    margin: 20px 0;
+}
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff007f;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+.about-btn:hover {
+    background: #ff0055;
+}
+
+.play-icon {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Hero Image */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px; /* Move the image towards the center */
+}
+
+.hero-image img {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image fits well */
+    border: 5px solid #ff007f; /* Add a border */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    filter: grayscale(0%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .hero-image {
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .hero-image img {
+        width: 200px; /* Adjust size for smaller screens */
+        height: 200px; /* Adjust size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .roles {
+        font-size: 18px;
+    }
+
+    .about-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .hero-image img {
+        width: 150px; /* Adjust size for mobile screens */
+        height: 150px; /* Adjust size for mobile screens */
+    }
+}
